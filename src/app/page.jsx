@@ -73,7 +73,7 @@ export default function Home() {
 
       <div className="flex justify-center flex-col ">
         {/* Carrousel */}
-        <div className="carousel carousel-center p-4 m-4 space-x-4 bg-base-100 rounded-box">
+        <div className="carousel carousel-center py-4 m-4 space-x-4 bg-base-100 rounded-box">
           <div className="carousel-item">
             <Image src="/utils/c_1.jpeg" alt="" width={400} height={150} />
           </div>
@@ -84,12 +84,7 @@ export default function Home() {
             <Image src="/utils/c_3.jpeg" alt="" width={400} height={150} />
           </div>
           <div className="carousel-item">
-            <Image
-              src="/utils/lastrelease.jpeg"
-              alt=""
-              width={560}
-              height={200}
-            />
+            <Image src="/utils/c_4.jpeg" alt="" width={400} height={200} />
           </div>
         </div>
 
@@ -114,14 +109,14 @@ export default function Home() {
           </figure>
           <div className="card-body">
             <h2 className="card-title">EP - Transcendence</h2>
-            <p>Escuchalo en Spotify clickeando el botón de abajo.</p>
+            <p>Escuchalo ahora en Spotify</p>
             <div className="card-actions justify-end">
               <a
                 href="https://spotify.link/uKSYSHVELDb"
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="btn btn-primary">Escuchar</button>
+                <button className="btn btn-primary mt-10">Escuchar</button>
               </a>
             </div>
           </div>
