@@ -20,7 +20,7 @@ export default function Home() {
         </div>
 
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 dark:text-white">
             <li>
               <a
                 href="https://spotify.link/BaXBksbaFDb"
@@ -108,15 +108,15 @@ export default function Home() {
             <Image src="/utils/ep.jpeg" alt="" width={380} height={200} />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">EP - Transcendence</h2>
-            <p>Escuchalo ahora en Spotify</p>
-            <div className="card-actions justify-end">
+            <h2 className="card-title dark:text-white">EP - Transcendence</h2>
+            <p className="dark:text-white">Escuchalo ahora en Spotify</p>
+            <div className="card-actions justify-end ">
               <a
                 href="https://spotify.link/uKSYSHVELDb"
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="btn btn-primary mt-10">Escuchar</button>
+                <button className="btn btn-primary mt-10 ">Escuchar</button>
               </a>
             </div>
           </div>
@@ -133,7 +133,9 @@ export default function Home() {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Mi último lanzamiento</h2>
+            <h2 className="card-title dark:text-white">
+              Mi último lanzamiento
+            </h2>
             <div className="card-actions justify-end">
               <a
                 href="https://www.youtube.com/watch?v=EPgyNMJ3UvI"
