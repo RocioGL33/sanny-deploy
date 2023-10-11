@@ -94,14 +94,14 @@ export default function Home() {
       </div>
 
       {/* EP */}
-      <div className="flex justify-center pt-5">
-        <div className="card lg:card-side bg-base-100 shadow-xl w-2/5 mr-5">
+      <div className="flex flex-col justify-center pt-5">
+        <div className="card lg:card-side bg-base-100 shadow-xl m-3 self-center">
           <figure>
             <Image src="/utils/ep.jpeg" alt="" width={400} height={200} />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Mi primer EP</h2>
-            <p>Podés escucharlo en Spotify clickeando el botón de abajo.</p>
+            <h2 className="card-title">EP - Transcendence</h2>
+            <p>Escuchalo en Spotify clickeando el botón de abajo.</p>
             <div className="card-actions justify-end">
               <a
                 href="https://spotify.link/uKSYSHVELDb"
@@ -115,7 +115,7 @@ export default function Home() {
         </div>
 
         {/* Spotify */}
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 shadow-xl self-center">
           <figure>
             <Image
               src="/utils/lastrelease.jpeg"
@@ -132,7 +132,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="btn btn-primary mt-12">
+                <button className="btn btn-primary mt-24">
                   Escuchar ahora
                 </button>
               </a>
