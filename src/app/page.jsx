@@ -5,10 +5,16 @@ import ContactForm from "@/components/ContactForm";
 export default function Home() {
   return (
     <>
+      <div className="justify-center m-5 block md:hidden">
+        <div className="flex justify-center items-center">
+          <img src="./img/logo.jpg" alt="" className="w-36" />
+        </div>
+      </div>
+
       {/* NavBar */}
       <div className="navbar">
         <div className="flex-1">
-          <a className="block pl-2 ">
+          <a className="hidden md:block pl-2">
             <img src="./img/logo.jpg" alt="" className="w-36" />
           </a>
         </div>
@@ -34,7 +40,7 @@ export default function Home() {
               </a>
             </li>
 
-            <li>
+            <li className="mr-3">
               <details>
                 <summary>Redes Sociales</summary>
                 <ul className="p-2 bg-base-100">
@@ -65,7 +71,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center flex-col mt-16  md:flex-row ">
+      <div className="flex justify-center flex-col mt-16 ">
         {/* Carrousel */}
         <div className="carousel carousel-center p-4 space-x-4 bg-base-100 rounded-box md:space-x-4 md:flex">
           <div className="carousel-item">
@@ -78,15 +84,15 @@ export default function Home() {
 
         {/* Sobre mi */}
       </div>
-      <div className="ml-7 pt-5 text-center">
-        <h1 className="text-xl">
+      <div className="p-3 text-center">
+        <h1 className="text-lg">
           <span className="text-primary">SANNY</span>, artista nacida en la
           ciudad de Mercedes Buenos Aires,
         </h1>
-        <h1 className="text-xl">
+        <h1 className="text-lg">
           compositora, con solo 23 años crece junto a su música,
         </h1>
-        <h1 className="text-xl"> y fiel creyente de cada una de sus letras.</h1>
+        <h1 className="text-lg"> y fiel creyente de cada una de sus letras.</h1>
       </div>
 
       <div>
@@ -94,7 +100,7 @@ export default function Home() {
       </div>
 
       {/* EP */}
-      <div className="flex flex-col justify-center pt-5">
+      <div className="flex flex-col justify-center ">
         <div className="card lg:card-side bg-base-100 shadow-xl m-3 self-center">
           <figure>
             <Image src="/utils/ep.jpeg" alt="" width={400} height={200} />
