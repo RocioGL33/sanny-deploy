@@ -71,25 +71,25 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center flex-col ">
-        {/* Carrousel */}
-        <div className="carousel carousel-center py-4 m-4 space-x-4 bg-base-100 rounded-box">
+      <div className="flex justify-center items-center flex-col ">
+        {/* Carrousel mobile*/}
+        <div className="carousel carousel-center py-4 m-4 space-x-4 bg-base-100 rounded-box md:w-fit ">
           <div className="carousel-item">
-            <Image src="/utils/c_1.jpeg" alt="" width={400} height={150} />
+            <Image src="/utils/c_1.jpeg" alt="" width={380} height={130} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_2.jpeg" alt="" width={400} height={150} />
+            <Image src="/utils/c_2.jpeg" alt="" width={380} height={130} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_3.jpeg" alt="" width={400} height={150} />
+            <Image src="/utils/c_3.jpeg" alt="" width={380} height={130} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_4.jpeg" alt="" width={400} height={200} />
+            <Image src="/utils/c_4.jpeg" alt="" width={380} height={130} />
           </div>
         </div>
-
-        {/* Sobre mi */}
       </div>
+
+      {/* Sobre mi */}
       <div className="p-3 text-center">
         <h1 className="text-lg">
           <span className="text-primary">SANNY</span>, artista nacida en la
@@ -102,10 +102,10 @@ export default function Home() {
       </div>
 
       {/* EP */}
-      <div className="flex flex-col justify-center ">
-        <div className="card lg:card-side bg-base-100 shadow-xl m-3 self-center">
+      <div className="flex flex-col justify-center md:flex-row">
+        <div className="card bg-base-100 shadow-xl m-3 self-center md:card-side mt-8">
           <figure>
-            <Image src="/utils/ep.jpeg" alt="" width={400} height={200} />
+            <Image src="/utils/ep.jpeg" alt="" width={380} height={200} />
           </figure>
           <div className="card-body">
             <h2 className="card-title">EP - Transcendence</h2>
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
 
         {/* Spotify */}
-        <div className="card w-96 bg-base-100 shadow-xl self-center">
+        <div className="card w-96 bg-base-100 shadow-xl self-center md:mt-5">
           <figure>
             <Image
               src="/utils/lastrelease.jpeg"
