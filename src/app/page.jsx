@@ -71,14 +71,25 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center flex-col mt-16 ">
+      <div className="flex justify-center flex-col ">
         {/* Carrousel */}
-        <div className="carousel carousel-center p-4 space-x-4 bg-base-100 rounded-box md:space-x-4 md:flex">
+        <div className="carousel carousel-center p-4 m-4 space-x-4 bg-base-100 rounded-box">
           <div className="carousel-item">
-            <Image src="/utils/c_1.jpeg" alt="" width={560} height={200} />
+            <Image src="/utils/c_1.jpeg" alt="" width={400} height={150} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_2.jpeg" alt="" width={560} height={200} />
+            <Image src="/utils/c_2.jpeg" alt="" width={400} height={150} />
+          </div>
+          <div className="carousel-item">
+            <Image src="/utils/c_3.jpeg" alt="" width={400} height={150} />
+          </div>
+          <div className="carousel-item">
+            <Image
+              src="/utils/lastrelease.jpeg"
+              alt=""
+              width={560}
+              height={200}
+            />
           </div>
         </div>
 
@@ -93,10 +104,6 @@ export default function Home() {
           compositora, con solo 23 años crece junto a su música,
         </h1>
         <h1 className="text-lg"> y fiel creyente de cada una de sus letras.</h1>
-      </div>
-
-      <div>
-        <h1></h1>
       </div>
 
       {/* EP */}
