@@ -6,8 +6,6 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "boxicons";
-
 
 import { EffectCoverFlow, Pagination, Navigation } from "swiper";
 
@@ -80,31 +78,25 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="m-4 flex justify-center">
+      {/* Carousel */}
+      <div className="m-5">
         <Swiper
-          effect={"coverflow"}
           grabCursor={true}
-          centeredSlides={true}
           loop={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 2.5,
-          }}
           modules={[Navigation]}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
             clickeable: true,
           }}
+          className="w-[80%] md:w-[20%]"
+          //style={{ width: "35%" }}
         >
           <SwiperSlide>
-            <img src="/utils/c_5.jpeg" alt="" className="w-[100%] md:w-[30%]" />
+            <img src="/utils/c_5.jpeg" alt="" className="swiper-image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/utils/c_1.jpeg" alt="" className="w-[100%] md:w-[30%]" />
+            <img src="/utils/c_1.jpeg" alt="" className="swiper-image " />
           </SwiperSlide>
           {/*<SwiperSlide>
             <img
@@ -129,10 +121,9 @@ export default function Home() {
           </SwiperSlide>*/}
 
           <div className="slider-controller">
-            <div className="swiper-button-prev slider-arrow  "></div>
-            <div className="swiper-button-next slider-arrow "></div>
+            <div className="swiper-button-prev slider-arrow"></div>
+            <div className="swiper-button-next slider-arrow"></div>
           </div>
-          <div className="swiper-pagination"></div>
         </Swiper>
       </div>
 
