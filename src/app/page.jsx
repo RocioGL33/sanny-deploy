@@ -42,7 +42,6 @@ export default function Home() {
                 href="https://www.youtube.com/@sanny__sg"
                 target="_blank"
                 rel="noreferrer"
-                className="pl-0"
               >
                 <img src="./img/youtube.png" alt="" className="w-5" /> Youtube
               </a>
@@ -50,7 +49,7 @@ export default function Home() {
 
             <li className="mr-3 text-white z-10">
               <details>
-                <summary className="text-white pl-0">Redes Sociales</summary>
+                <summary>Redes Sociales</summary>
                 <ul className="p-2 bg-base-100">
                   <li>
                     <a
