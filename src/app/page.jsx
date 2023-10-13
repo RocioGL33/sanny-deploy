@@ -12,7 +12,7 @@ import { EffectCoverFlow, Pagination, Navigation } from "swiper";
 export default function Home() {
   return (
     <>
-      <div className="justify-center m-5 block md:hidden">
+      <div className="justify-center p-5 block md:hidden">
         <div className="flex justify-center items-center">
           <img src="./img/logo.jpg" alt="" className="w-36" />
         </div>
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1 dark:text-white">
+          <ul className="menu menu-horizontal dark:text-white">
             <li>
               <a
                 href="https://spotify.link/BaXBksbaFDb"
@@ -42,6 +42,7 @@ export default function Home() {
                 href="https://www.youtube.com/@sanny__sg"
                 target="_blank"
                 rel="noreferrer"
+                className="pl-0"
               >
                 <img src="./img/youtube.png" alt="" className="w-5" /> Youtube
               </a>
@@ -49,7 +50,7 @@ export default function Home() {
 
             <li className="mr-3 text-white z-10">
               <details>
-                <summary>Redes Sociales</summary>
+                <summary className="text-white pl-0">Redes Sociales</summary>
                 <ul className="p-2 bg-base-100">
                   <li>
                     <a
@@ -161,7 +162,7 @@ export default function Home() {
         </div>
 
         {/* Spotify */}
-        <div className="card w-96 bg-base-100 self-center md:mt-5">
+        <div className="card w-[21.5rem] h-96 bg-base-100 self-center md:mt-5">
           <figure>
             <Image
               src="/utils/lastrelease.jpeg"
