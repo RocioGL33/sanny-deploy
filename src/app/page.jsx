@@ -1,6 +1,15 @@
 "use client";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
 import ContactForm from "@/components/ContactForm";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "boxicons";
+
+
+import { EffectCoverFlow, Pagination, Navigation } from "swiper";
 
 export default function Home() {
   return (
@@ -71,33 +80,60 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center flex-col ">
-        {/* Carrousel */}
-        <div className="carousel carousel-center py-4 m-4 bg-base-100 rounded-box md:w-fit ">
-          <div className="carousel-item">
-            <Image src="/utils/c_5.jpeg" alt="" width={380} height={110} />
+      <div className="m-4 flex justify-center">
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+          }}
+          modules={[Navigation]}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            clickeable: true,
+          }}
+        >
+          <SwiperSlide>
+            <img src="/utils/c_5.jpeg" alt="" className="w-[100%] md:w-[30%]" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/utils/c_1.jpeg" alt="" className="w-[100%] md:w-[30%]" />
+          </SwiperSlide>
+          {/*<SwiperSlide>
+            <img
+              src="/utils/c_2.jpeg"
+              alt=""
+              style={{ width: "50%", height: "50%" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/utils/c_3.jpeg"
+              alt=""
+              style={{ width: "50%", height: "50%" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/utils/c_4.jpeg"
+              alt=""
+              style={{ width: "50%", height: "50%" }}
+            />
+          </SwiperSlide>*/}
+
+          <div className="slider-controller">
+            <div className="swiper-button-prev slider-arrow  "></div>
+            <div className="swiper-button-next slider-arrow "></div>
           </div>
-          <div className="carousel-item">
-            <Image src="/utils/c_1.jpeg" alt="" width={365} height={110} />
-          </div>
-          <div className="carousel-item">
-            <Image src="/utils/c_2.jpeg" alt="" width={365} height={110} />
-          </div>
-          <div className="carousel-item">
-            <Image src="/utils/c_3.jpeg" alt="" width={365} height={110} />
-          </div>
-          <div className="carousel-item">
-            <Image src="/utils/c_4.jpeg" alt="" width={365} height={110} />
-          </div>
-        </div>
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-8 right-8 md:hidden">
-          <a href="#slide3" className="text-primary">
-            ❮
-          </a>
-          <a href="#slide1" className="text-primary">
-            ❯
-          </a>
-        </div>
+          <div className="swiper-pagination"></div>
+        </Swiper>
       </div>
 
       {/* Sobre mi */}
