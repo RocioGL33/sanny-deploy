@@ -73,24 +73,24 @@ export default function Home() {
 
       <div className="flex justify-center items-center flex-col ">
         {/* Carrousel */}
-        <div className="carousel carousel-center py-4 m-4 bg-base-100 rounded-box">
+        <div className="carousel carousel-center py-4 m-4 bg-base-100 rounded-box md:w-fit ">
           <div className="carousel-item">
-            <Image src="/utils/c_5.jpeg" alt="" width={380} height={120} />
+            <Image src="/utils/c_5.jpeg" alt="" width={380} height={110} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_1.jpeg" alt="" width={380} height={120} />
+            <Image src="/utils/c_1.jpeg" alt="" width={365} height={110} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_2.jpeg" alt="" width={380} height={120} />
+            <Image src="/utils/c_2.jpeg" alt="" width={365} height={110} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_3.jpeg" alt="" width={380} height={120} />
+            <Image src="/utils/c_3.jpeg" alt="" width={365} height={110} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_4.jpeg" alt="" width={380} height={120} />
+            <Image src="/utils/c_4.jpeg" alt="" width={365} height={110} />
           </div>
         </div>
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-8 right-8">
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-8 right-8 md:hidden">
           <a href="#slide3" className="text-primary">
             ❮
           </a>
@@ -134,7 +134,7 @@ export default function Home() {
         </div>
 
         {/* Spotify */}
-        <div className="card w-96 bg-base-100 shadow-xl self-center md:mt-5">
+        <div className="card w-96 bg-base-100 self-center md:mt-5">
           <figure>
             <Image
               src="/utils/lastrelease.jpeg"
@@ -153,9 +153,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="btn btn-primary mt-24">
-                  Escuchar ahora
-                </button>
+                <button className="btn btn-primary mt-5">Escuchar ahora</button>
               </a>
             </div>
           </div>
