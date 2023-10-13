@@ -47,7 +47,7 @@ export default function Home() {
               </a>
             </li>
 
-            <li className="mr-3 text-white">
+            <li className="mr-3 text-white z-10">
               <details>
                 <summary>Redes Sociales</summary>
                 <ul className="p-2 bg-base-100">
