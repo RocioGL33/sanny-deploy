@@ -70,7 +70,7 @@ const ContactForm = () => {
 
         <input
           type="submit"
-          className="btn btn-wide bg-primary self-center"
+          className="btn float-right bg-primary self-center"
           value="Enviar"
         />
       </form>

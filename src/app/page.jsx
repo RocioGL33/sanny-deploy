@@ -40,7 +40,7 @@ export default function Home() {
               </a>
             </li>
 
-            <li className="mr-3">
+            <li className="mr-3 text-white">
               <details>
                 <summary>Redes Sociales</summary>
                 <ul className="p-2 bg-base-100">
@@ -72,20 +72,31 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center items-center flex-col ">
-        {/* Carrousel mobile*/}
-        <div className="carousel carousel-center py-4 m-4 space-x-4 bg-base-100 rounded-box md:w-fit ">
+        {/* Carrousel */}
+        <div className="carousel carousel-center py-4 m-4 bg-base-100 rounded-box">
           <div className="carousel-item">
-            <Image src="/utils/c_1.jpeg" alt="" width={380} height={130} />
+            <Image src="/utils/c_5.jpeg" alt="" width={380} height={120} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_2.jpeg" alt="" width={380} height={130} />
+            <Image src="/utils/c_1.jpeg" alt="" width={380} height={120} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_3.jpeg" alt="" width={380} height={130} />
+            <Image src="/utils/c_2.jpeg" alt="" width={380} height={120} />
           </div>
           <div className="carousel-item">
-            <Image src="/utils/c_4.jpeg" alt="" width={380} height={130} />
+            <Image src="/utils/c_3.jpeg" alt="" width={380} height={120} />
           </div>
+          <div className="carousel-item">
+            <Image src="/utils/c_4.jpeg" alt="" width={380} height={120} />
+          </div>
+        </div>
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-8 right-8">
+          <a href="#slide3" className="text-primary">
+            ❮
+          </a>
+          <a href="#slide1" className="text-primary">
+            ❯
+          </a>
         </div>
       </div>
 
